@@ -8,13 +8,15 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@stencil/core": "4.21.0",
     "@types/jest": "^27.0.3",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
+    "patch-package": "^8.0.0",
     "puppeteer": "^10.0.0",
     "typescript": "^5.6.2"
   },

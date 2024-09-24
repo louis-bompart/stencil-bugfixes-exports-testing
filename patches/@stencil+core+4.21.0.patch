@@ -1,0 +1,13 @@
+diff --git a/node_modules/@stencil/core/compiler/stencil.js b/node_modules/@stencil/core/compiler/stencil.js
+index 34881aa..1d6a9cb 100644
+--- a/node_modules/@stencil/core/compiler/stencil.js
++++ b/node_modules/@stencil/core/compiler/stencil.js
+@@ -234905,7 +234905,7 @@ var getTsOptionsToExtend = (config) => {
+     // declaration files
+     declaration: config.outputTargets.some(isOutputTargetDistTypes),
+     module: import_typescript.default.ModuleKind.ESNext,
+-    moduleResolution: import_typescript.default.ModuleResolutionKind.NodeJs,
++    moduleResolution: import_typescript.default.ModuleResolutionKind.Bundler,
+     noEmitOnError: false,
+     outDir: config.cacheDir || config.sys.tmpDirSync(),
+     sourceMap: config.sourceMap,
